@@ -67,8 +67,7 @@ http://192.168.x.x
 
 # 📸 Preuves
 
-Captures disponibles dans le dossier screenshots/ ou
-![Apache](screenshots/apache.png.png)
+Captures disponibles dans le dossier screenshots/
 
 ---
 
