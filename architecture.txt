@@ -1,0 +1,11 @@
+Architecture du projet srv-web-01
+
+[ PC Windows ]
+|
+[ VirtualBox ]
+|
+[ VM Ubuntu Server ]
+|
+[ Apache Web Server ]
+|
+Adresse IP : 192.168.1.97
