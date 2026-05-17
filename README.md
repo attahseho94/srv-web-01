@@ -1,123 +1,76 @@
-# srv-web-01
-Premier pat avec VirtualBox / Ubuntu Server
-# Projet SISR - Serveur Web Linux Apache
+# 🚀 Projet SISR - Serveur Web Apache (srv-web-01)
 
- ## Objectif
+# 🎯 Objectif
 
-Créer un serveur web Linux dans une machine virtuelle avec Apache afin d'apprendre :
+Créer un serveur web sous Linux avec Apache dans une machine virtuelle afin de comprendre :
 
-* la virtualisation,
-* Linux,
-* le réseau,
-* les services web,
-* l'administration système.
+* la virtualisation
+* Linux
+* les services réseau
+* l’administration système
 
 ---
 
- Environnement utilisé
+# 🧰 Environnement utilisé
 
-* Windows
 * VirtualBox
 * Ubuntu Server
 * Apache2
+* Windows hôte
 
 ---
 
-## Architecture
+# 🏗️ Architecture
 
 PC Windows
 → VirtualBox
-→ VM Ubuntu Server
+→ Ubuntu Server
 → Apache Web Server
+→ Page web accessible via navigateur
 
 ---
 
-## Étapes réalisées
+# 🌐 Configuration réseau
 
-### 1. Création de la machine virtuelle
+* Mode : Accès par pont (Bridged)
+* IP du serveur : 192.168.x.x
 
-* Installation de VirtualBox
-* Création de la VM `srv-web-01`
-* Allocation RAM et stockage
+---
 
-### 2. Installation Ubuntu Server
+# ⚙️ Installation Apache
 
-* Création utilisateur Linux
-* Installation OpenSSH
-* Mise à jour système
-
-### 3. Configuration réseau
-
-* Passage du réseau VirtualBox en mode pont
-* Attribution d'une IP locale
-
-Adresse IP du serveur :
-`192.168.1.97`
-
-### 4. Installation Apache
-
-Commande utilisée :
-
-bash
+```bash
+sudo apt update && sudo apt upgrade -y
 sudo apt install apache2 -y
-
-
-Vérification du service :
-
-bash
-systemctl status apache2
-
+```
 
 ---
 
-## Résultat
+# 📄 Page web
 
-Le serveur web est accessible depuis le navigateur :
+Page accessible via :
 
-text
-http://192.168.1.97
-
-
-Affichage de la page Apache par défaut.
+http://192.168.x.x
 
 ---
 
-## Compétences travaillées
+# 🧠 Compétences acquises
 
-* Linux
+* Linux (Ubuntu Server)
 * Virtualisation
-* Réseau
-* Apache
+* Réseau local
+* Apache Web Server
 * Administration système
 * Dépannage
-* Utilisation du terminal
 
 ---
 
-## Difficultés rencontrées
+# 📸 Preuves
 
-### Virtualisation désactivée dans le BIOS
-
-Erreur rencontrée :
-
-* VT-x disabled
-
-Solution :
-
-* activation de la virtualisation dans le BIOS.
-
-### Accès réseau à la VM
-
-Problème :
-
-* serveur inaccessible depuis Windows.
-
-Solution :
-
-* configuration réseau VirtualBox en mode pont.
+Captures disponibles dans le dossier screenshots/
 
 ---
 
-## Auteur
+# 👨‍💻 Auteur
 
-Projet réalisé dans le cadre de l'apprentissage BTS SIO SISR.
+Projet réalisé dans le cadre de l’apprentissage BTS SIO SISR
